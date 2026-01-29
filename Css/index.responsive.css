@@ -1,0 +1,231 @@
+@media (max-width: 1300px) {
+  /*---------------------------------------nav------------------------------------*/
+  nav.navbar .image {
+    width: 20%;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+    background-color: black;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  header nav.navbar .navbar-toggler {
+    background-color: transparent;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid #4d8b55;
+    transition-duration: 0.5s;
+  }
+
+  header nav.navbar .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  header nav.navbar .navbar-toggler[aria-expanded="true"] {
+    background-color: #fff;
+    border-color: #fff;
+  }
+
+  header nav.navbar .navbar-toggler span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #4d8b55;
+  }
+
+  /*---------------------------------------header------------------------------------*/
+  #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption {
+    width: 100%;
+  }
+
+  header .carousel-inner .carousel-item .carousel-caption h2 {
+    font-size: 30px;
+  }
+
+  header .carousel-inner .carousel-item .carousel-caption p {
+    font-size: 16px;
+  }
+  /*------------------------- Menu-----------------------*/
+  #Menu .nav-tabs {
+    width: max-content;
+    overflow: auto;
+  }
+  #Menu .cover {
+    overflow: auto;
+  }
+
+  #Menu .item {
+    max-width: 280px;
+    margin: auto;
+  }
+  /*-------------------------Beans Coffee-----------------------*/
+  #Beans_Coffee {
+    height: 200px;
+  }
+  #Beans_Coffee .content h2 {
+    font-size: 25px;
+  }
+  #Beans_Coffee .content h3 {
+    font-size: 30px;
+  }
+  #Beans_Coffee .content i {
+    font-size: 50px;
+  }
+  /*-------------------------Book-----------------------*/
+
+  #Book .part1 {
+    display: none;
+  }
+
+#Book .part2 {
+  width: 80%;
+  margin: auto;
+}
+#Book .part2 .content{
+  padding-inline: 15px;
+}
+}
+
+@media (min-width: 371px) and (max-width: 1300px) {
+  /*---------------------------------------header------------------------------------*/
+  #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption {
+    width: 80%;
+  }
+  /*---------------------------------------Services------------------------------------*/
+  #Services .part2 .image {
+    width: 70%;
+    margin: 0 auto 50px;
+  }
+  /*-------------------------Beans Coffee-----------------------*/
+  #Beans_Coffee {
+    height: 250px;
+  }
+  #Beans_Coffee .content h2 {
+    font-size: 35px;
+  }
+  #Beans_Coffee .content h3 {
+    font-size: 40px;
+  }
+  #Beans_Coffee .content i {
+    font-size: 70px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 1300px) {
+  /*---------------------------------------nav------------------------------------*/
+  nav.navbar .image {
+    width: 15%;
+  }
+  /*---------------------------------------header------------------------------------*/
+  #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption {
+    width: 90%;
+  }
+
+  header .carousel-inner .carousel-item .carousel-caption h2 {
+    font-size: 40px;
+  }
+  header .carousel-inner .carousel-item .carousel-caption p {
+    font-size: 17px;
+  }
+  /*-------------------------Beans Coffee-----------------------*/
+  #Beans_Coffee {
+    height: 300px;
+  }
+  #Beans_Coffee .content h2 {
+    font-size: 42px;
+  }
+  #Beans_Coffee .content h3 {
+    font-size: 50px;
+  }
+  #Beans_Coffee .content i {
+    font-size: 75px;
+  }
+  /*-------------------------Book-----------------------*/
+
+  #Book .part1 {
+    display: block;
+  }
+  #Book .part2{
+    width: 50%;
+    margin: initial;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+  /* ---------------------------------------nav------------------------------------*/
+  nav.navbar .image {
+    width: 12%;
+  }
+  /*---------------------------------------header------------------------------------*/
+
+  header .carousel-inner .carousel-item .carousel-caption h2 {
+    font-size: 50px;
+  }
+  /*------------------------- About part2 -----------------------*/
+  #About .part2 .row .item {
+    width: fit-content;
+    margin: auto;
+  }
+  /*---------------------------------------Services------------------------------------*/
+  #Services .part2 .image {
+    width: 50%;
+  }
+  /*---------------------------------------Menu----------------------------------*/
+
+  #Menu .item {
+    max-width: 320px;
+  }
+  /*-------------------------Beans Coffee-----------------------*/
+  #Beans_Coffee {
+    height: 350px;
+  }
+  #Beans_Coffee .content h2 {
+    font-size: 57px;
+  }
+  #Beans_Coffee .content h3 {
+    font-size: 60px;
+  }
+  #Beans_Coffee .content i {
+    font-size: 80px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+  /*---------------------------------------nav------------------------------------*/
+  nav.navbar .image {
+    width: 9%;
+  }
+  header nav.navbar .navbar-toggler {
+    display: none;
+  }
+
+  #navbarSupportedContent {
+    background-color: transparent;
+  }
+  /*---------------------------------------Services------------------------------------*/
+  #Services .part2 .image {
+    width: 100%;
+  }
+  /*-------------------------Beans Coffee-----------------------*/
+  #Beans_Coffee {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1181px) and (max-width: 1300px) {
+  /*---------------------------------------nav------------------------------------*/
+  nav.navbar .image {
+    width: 8%;
+  }
+  /*---------------------------------------header------------------------------------*/
+
+  header .carousel-inner .carousel-item .carousel-caption h2 {
+    font-size: 60px;
+  }
+}

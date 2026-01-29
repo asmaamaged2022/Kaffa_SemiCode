@@ -1,0 +1,481 @@
+/*---------------------------------------nav------------------------------------*/
+nav.navbar {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: 3;
+}
+nav.navbar .image {
+  width: 7%;
+}
+nav.navbar ul li a {
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+nav.navbar ul li a .text {
+  position: relative;
+  z-index: 3;
+}
+
+nav.navbar ul li a::after,
+nav.navbar ul li a::before,
+nav.navbar ul li a .shape {
+  content: " ";
+  width: 100%;
+  height: calc(100% / 3);
+  background-color: var(--mainColor);
+  position: absolute;
+  transition-duration: 0.5s;
+}
+nav.navbar ul li a::before {
+  top: 0;
+}
+nav.navbar ul li a .shape {
+  top: calc(100% / 3);
+}
+nav.navbar ul li a::after {
+  bottom: 0;
+}
+nav.navbar ul li a::after,
+nav.navbar ul li a::before {
+  left: -100%;
+}
+nav.navbar ul li a .shape {
+  left: 100%;
+}
+nav.navbar ul li a:hover::after,
+nav.navbar ul li a:hover::before,
+nav.navbar ul li a:hover .shape {
+  left: 0;
+}
+/*---------------------------------------header------------------------------------*/
+header .carousel-inner .carousel-item {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header .carousel-inner > :nth-of-type(1) {
+  background-image: url("../images/banner1.jpg");
+}
+header .carousel-inner > :nth-of-type(2) {
+  background-image: url("../images/banner2.jpg");
+}
+header .carousel-inner > :nth-of-type(3) {
+  background-image: url("../images/banner3.jpg");
+}
+header .carousel-inner > :nth-of-type(4) {
+  background-image: url("../images/banner4.jpg");
+}
+header .carousel-inner > ::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#carouselExampleCaptions .carousel-inner .carousel-item .container {
+  position: relative;
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption {
+  position: initial;
+  width: 75%;
+  letter-spacing: 1.4px;
+}
+header .carousel-inner .carousel-item .carousel-caption > * {
+  transform: translateY(-30px);
+  opacity: 0;
+  transition-duration: 1s;
+}
+header .carousel-inner .carousel-item.active .carousel-caption > * {
+  transform: translateY(0px);
+  opacity: 1;
+}
+header .carousel-inner .carousel-item .carousel-caption h2 {
+  font-size: 70px;
+  color: var(--mainColor);
+}
+header .carousel-inner .carousel-item .carousel-caption p {
+  transition-delay: 0.2s;
+  font-size: 20px;
+}
+header .carousel-inner .carousel-item .carousel-caption .buttons {
+  transition-delay: 0.4s;
+}
+header .carousel-inner .carousel-item .carousel-caption .buttons button,
+header .carousel-inner .carousel-item .carousel-caption .buttons a {
+  position: relative;
+  overflow: hidden;
+}
+header .carousel-inner .carousel-item .carousel-caption .buttons button span,
+header .carousel-inner .carousel-item .carousel-caption .buttons a span {
+  color: var(--mainColor);
+  font-weight: 300;
+  position: relative;
+  z-index: 3;
+  transition-duration: 1s;
+}
+header .carousel-inner .carousel-caption .buttons button:hover span,
+header .carousel-inner .carousel-caption .buttons a:hover span {
+  color: white;
+}
+
+header .carousel-inner .carousel-caption .buttons button::before,
+header .carousel-inner .carousel-caption .buttons a::before,
+header .carousel-inner .carousel-caption .buttons button::after,
+header .carousel-inner .carousel-caption .buttons a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  border: 21px solid var(--mainColor);
+  transition-duration: 1s;
+}
+
+header .carousel-inner .carousel-caption .buttons button::after,
+header .carousel-inner .carousel-caption .buttons a::after {
+  left: 100%;
+  border-left-color: transparent;
+}
+header .carousel-inner .carousel-caption .buttons button::before,
+header .carousel-inner .carousel-caption .buttons a::before {
+  left: -100%;
+  border-right-color: transparent;
+}
+header .carousel-inner .carousel-caption .buttons button:hover:before,
+header .carousel-inner .carousel-caption .buttons a:hover::before,
+header .carousel-inner .carousel-caption .buttons button:hover::after,
+header .carousel-inner .carousel-caption .buttons a:hover::after {
+  left: 0;
+}
+#carouselExampleCaptions .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: var(--mainColor);
+  margin-right: 5px;
+}
+/*---------------------------------------About------------------------------------*/
+
+#About .part1 .item {
+  letter-spacing: 1.4px;
+}
+#About .part1 .item h2 {
+  font-size: 45px;
+}
+#About .part1 .item button {
+  position: relative;
+  overflow: hidden;
+}
+#About .part1 .item button span {
+  letter-spacing: 1.1px;
+  transition-duration: 0.5s;
+  color: white;
+  position: relative;
+  z-index: 3;
+}
+#About .part1 .item button:hover span {
+  color: var(--mainColor);
+}
+#About .part1 .item button::after,
+#About .part1 .item button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  transition-duration: 0.5s;
+}
+#About .part1 .item button::before {
+  top: -50%;
+}
+#About .part1 .item button::after {
+  bottom: -50%;
+}
+#About .part1 .item button:hover:before {
+  top: 0%;
+}
+#About .part1 .item button:hover:after {
+  bottom: 0%;
+}
+/*------------------------- About part2 -----------------------*/
+#About .part2 .row .item {
+  width: 230px;
+  margin: auto;
+}
+#About .part2 .card {
+  background-color: transparent;
+  position: relative;
+}
+#About .part2 .front {
+  backface-visibility: hidden;
+  transform: rotateY(0deg);
+  transition-duration: 1s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#About .part2 .card:hover .front {
+  transform: rotateY(180deg);
+}
+#About .part2 .box1 .front {
+  background-image: url("../images/about_front_01.jpg");
+}
+#About .part2 .box2 .front {
+  background-image: url("../images/about_front_02.jpg");
+}
+#About .part2 .box3 .front {
+  background-image: url("../images/about_front_03.jpg");
+}
+#About .part2 .back {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  transition-duration: 1s;
+}
+#About .part2 .card:hover .back {
+  transform: rotateY(0deg);
+}
+#About .part2 .box1 .back {
+  background-color: #404042;
+}
+
+#About .part2 .box2 .back {
+  background-color: #88774b;
+}
+#About .part2 .box3 .back {
+  background-color: #6d1f37;
+}
+#About .part2 .back a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  background-color: transparent;
+  width: fit-content;
+  margin: auto;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 100;
+  letter-spacing: 1.2px;
+  transition-duration: 0.5s;
+}
+#About .part2 .back a:hover {
+  font-weight: 300;
+  background-color: white;
+}
+#About .part2 .box1 .back a:hover {
+  color: #404042;
+}
+#About .part2 .box2 .back a:hover {
+  color: #88774b;
+}
+#About .part2 .box3 .back a:hover {
+  color: #6d1f37;
+}
+#About .part2 .back a i {
+  transition-duration: 0.5s;
+}
+#About .part2 .back a:hover i {
+  margin-left: 2px;
+}
+/*------------------------- Services-----------------------*/
+
+#Services {
+  background-image: url("../images/beans_bg.jpg");
+}
+#Services::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+#Services p {
+  color: var(--pColor);
+}
+
+#Services i {
+  color: var(--mainColor);
+  font-size: 40px;
+}
+#Services .part2 img {
+  animation-name: animat_1;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+/*------------------------- Menu-----------------------*/
+#Menu .nav-tabs {
+  width: fit-content;
+  margin: auto;
+}
+#Menu .nav-tabs .nav-link {
+  color: white;
+  transition-duration: 0.5s;
+  letter-spacing: 1.2px;
+}
+#Menu .nav-tabs .nav-link.active,
+#Menu .nav-tabs .nav-link:hover {
+  color: var(--mainColor);
+  background-color: white;
+}
+#Menu .item {
+  position: relative;
+  background-color: #ffffff;
+  transform: scale(0);
+  transition-duration: 1s;
+}
+#Menu .show .item {
+  transform: scale(1);
+}
+
+#Menu .item h6,
+#Menu .item p {
+  position: absolute;
+  left: 0;
+  background-color: var(--mainColor);
+  background-image: url("../images/leaves_pattern.png");
+  padding: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+  transform: translatex(-100%);
+  transition-duration: 1s;
+}
+#Menu .item h6 {
+  top: 15px;
+}
+#Menu .item p {
+  bottom: 15px;
+}
+#Menu .item img {
+  transform: scale(0.8);
+  transition-duration: 1s;
+}
+#Menu .item:hover img {
+  transform: scale(1);
+}
+#Menu .item:hover h6,
+#Menu .item:hover p {
+  transform: translatex(0%);
+}
+/*-------------------------Beans Coffee-----------------------*/
+#Beans_Coffee {
+  height: 400px;
+  background-image: url("../images/ice_drinks_bg.jpg");
+}
+#Beans_Coffee .content h2 {
+  color: var(--mainColor);
+  font-size: 80px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+#Beans_Coffee .content h3 {
+  font-size: 60px;
+}
+#Beans_Coffee .content i {
+  color: white;
+  font-size: 90px;
+  transition-duration: 0.5s;
+}
+#Beans_Coffee .content i:hover {
+  color: var(--mainColor);
+}
+
+.modal-dialog {
+  height: 100%;
+  max-width: initial;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background-color: transparent;
+  width: 500px;
+}
+.modal-body {
+  padding: 0;
+}
+video {
+  width: 100%;
+  height: 100%;
+}
+
+/*-------------------------Book-----------------------*/
+#Book {
+  background-image: url("../images/black-bg.png");
+}
+
+#Book .part2 .content {
+  outline: 1px solid var(--mainColor);
+  border-radius: 20px;
+  background-color: var(--mainColor);
+  background-image: url("../images/leaves_pattern.png");
+}
+
+#Book form textarea {
+  resize: none;
+  height: 250px;
+}
+#Book form textarea:focus,
+#Book form input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(77, 139, 85, 0.9);
+  border-color: var(--mainColor);
+}
+::placeholder,
+#Book form input[type="datetime-local"] {
+  font-weight: 100;
+}
+#Book form button {
+  position: relative;
+  transition-duration: 1s;
+  overflow: hidden;
+  background-color: black;
+  padding: 10px;
+  border: none;
+}
+#Book form button span{
+position: relative;
+z-index: 4;
+}
+#Book form button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: -100%;
+  background-color: var(--mainColor);
+  transition-duration: 1s;
+}
+#Book form button:hover {
+  border: 1px solid white;
+}
+#Book form button:hover::after {
+  bottom: 0;
+}
+
+/*-------------------------footer-----------------------*/
+
+footer {
+  background-color: #333333;
+}
+footer p {
+  margin: 0;
+}

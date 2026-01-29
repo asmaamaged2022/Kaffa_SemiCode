@@ -1,0 +1,56 @@
+:root {
+  --mainColor: rgb(77, 139, 85);
+  --pColor: #c0c0c0;
+}
+
+::selection {
+  color: #000;
+  background-color: var(--mainColor);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Oswald, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family:
+    Sansita Swashed,
+    cursive;
+}
+#About,
+#Menu {
+  background-image: url("../images/leaves_pattern.png");
+  background-color: var(--mainColor);
+}
+
+#Beans_Coffee::before,
+#Services::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#Beans_Coffee,
+#Services{
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    background-attachment: fixed;
+
+  position: relative;
+}

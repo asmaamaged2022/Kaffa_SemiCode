@@ -1,0 +1,10 @@
+@keyframes animat_1{
+    0%{
+     transform: translatey(-30px);
+    }
+    100%{
+     transform: translatey(0px);
+
+    }
+    
+}
