@@ -59,7 +59,9 @@
   #Menu .cover {
     overflow: auto;
   }
-
+  #Menu .cover::-webkit-scrollbar{
+    display: none;
+  }
   #Menu .item {
     max-width: 280px;
     margin: auto;
